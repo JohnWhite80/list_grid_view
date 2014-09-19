@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/buttonback" 
+    android:orientation="horizontal" >
+ <LinearLayout 
+    		android:id="@+id/ll_find"
+    		android:clickable="true"
+    		android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"                      
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_backfind"
+                android:layout_marginTop="4dp"                 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"                
+                android:background="@drawable/findselector"/>
+            <TextView 
+                android:id="@+id/tv_find"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找签客"
+                android:layout_marginBottom="4dp"
+                android:textSize="@dimen/textsize_small"
+                android:textColor="@color/bottomgray"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_come"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.99"          
+            android:orientation="vertical" >
+            <ImageView 
+                android:id="@+id/iv_backcome"  
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/comeselector"/>
+            <TextView 
+                android:id="@+id/tv_come"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="来信"
+                android:layout_marginBottom="4dp"
+                android:textSize="@dimen/textsize_small"
+                android:textColor="@color/bottomgray"
+                />          
+        </LinearLayout>
+        <LinearLayout 
+            android:gravity="center"
+            android:id="@+id/ll_my"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+          
+            <ImageView 
+                android:id="@+id/iv_backmy"                
+                android:layout_marginTop="4dp"
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/myselector"/>
+            <TextView 
+                android:id="@+id/tv_my"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                android:layout_marginBottom="4dp"
+                android:textSize="@dimen/textsize_small"
+                android:textColor="@color/bottomgray"
+                />
+        </LinearLayout>    
+   
+
+</LinearLayout>

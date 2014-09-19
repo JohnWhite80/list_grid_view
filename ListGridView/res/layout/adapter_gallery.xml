@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white" >
+    <View
+        android:layout_width="8dp"
+        android:layout_height="72dp"/>
+    <LinearLayout
+        android:id="@+id/ll_chat_left"
+        android:clickable="true"
+         android:background="@drawable/pressback"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  >
+    <LinearLayout 
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/pressback"
+        >
+         <ImageView        
+        android:id="@+id/headpic_gallery"       
+        android:layout_width="80dp"
+        android:layout_height="72dp"
+        
+        />
+    </LinearLayout>
+    <View
+        android:layout_width="8dp"
+        android:layout_height="72dp"/>
+    <LinearLayout 
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="vertical"
+        >
+        <TextView
+        android:id="@+id/nikename_gallery" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_small"
+        android:textColor="@color/black"
+        android:text="我去你妹的"
+        android:layout_marginBottom="8dp"
+        android:lines="1"
+        android:ellipsize="end"
+        />
+     <TextView 
+         android:id="@+id/desscripe_gallery"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:lines="3"
+        android:ellipsize="end"
+        android:textSize="@dimen/textsize_small"
+        android:textColor="@color/lightgray"
+        android:text="标签：Model女性模特第一名发布文章264篇合肥卡号的反馈后"
+        />
+    </LinearLayout> 
+	</LinearLayout>
+	 <View
+        android:layout_width="8dp"
+        android:layout_height="72dp"/>                      
+</LinearLayout>
